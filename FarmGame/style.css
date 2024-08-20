@@ -1,0 +1,38 @@
+body {
+    overflow-x: hidden;
+
+    background:
+        linear-gradient(
+          to left,
+          hsl(0, 0%, 11%) 95%,
+          hsl(0, 0%, 12%) 8.1%,
+          hsl(0, 0%, 13%) 15.5%,
+          hsl(0, 0%, 14%) 22.5%,
+          hsl(0, 0%, 15%) 29%,
+          hsl(0, 0%, 16%) 35.3%,
+          hsl(0, 0%, 18%) 41.2%,
+          hsl(0, 0%, 19%) 49.1%,
+          hsl(0, 0%, 19%) 50.9%,
+          hsl(0, 0%, 18%) 41.8%,
+          hsl(0, 0%, 16%) 35.7%,
+          hsl(0, 0%, 15%) 29%,
+          hsl(0, 0%, 14%) 22.5%,
+          hsl(0, 0%, 13%) 14.5%,
+          hsl(0, 0%, 12%) 8.9%,
+          hsl(0, 0%, 11%) 95%
+        );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #ece0e0
+}
+a:link,a:visited,a:hover,a:active{
+    text-decoration: none; 
+    color: #ece0e0;
+}
+iframe{
+    height: 75vh;
+    width: 75vw;
+
+    padding: 0;
+}
