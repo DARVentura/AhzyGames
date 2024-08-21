@@ -3,6 +3,8 @@ body {
     margin: 0; 
     height: 100vh; 
     color: #ece0e0;
+    font-size: 2vh;
+    
     background: linear-gradient(
       45deg,
       hsl(0, 0%, 8%) 0%,
@@ -33,9 +35,24 @@ a:link,a:visited,a:hover,a:active{
     text-decoration: none; 
     color: #ece0e0;
 }
+#Heading{
+    display: flex;
+    justify-content: left;
+
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+    word-spacing: 5vw;
+}
+#TheFarmGame{
+    display: flex;
+    justify-content: center;
+}
 iframe{
     height: 75vh;
     width: 75vw;
+
+    border: solid rgb(33, 33, 33);
 
     padding: 0;
 }
