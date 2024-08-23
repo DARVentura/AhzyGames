@@ -81,16 +81,16 @@ function animateFontColor(targetFontColors, duration = 1000) {
 document.querySelectorAll('.GameImage').forEach(function(image) {
     image.addEventListener('mouseover', function() {
         animateBackground([
-            'rgb(20, 10, 0)',  
-            'rgb(26, 13, 0)',  
-            'rgb(30, 15, 0)',  
-            'rgb(36, 18, 0)',  
-            'rgb(41, 20, 0)',  
-            'rgb(46, 23, 0)'
+            'rgb(5, 5, 5)',
+            'rgb(11, 11, 11)',
+            'rgb(15, 15, 15)',
+            'rgb(21, 21, 21)',
+            'rgb(26, 26, 26)',
+            'rgb(31, 31, 31)'
         ]);
 
         // Animate font color on hover
-        animateFontColor('rgb(248, 229, 187)', 1000); // Example target font color
+        animateFontColor('rgb(204, 185, 155)', 1000); // Example target font color
     });
 
     image.addEventListener('mouseout', function() {
