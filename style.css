@@ -1,36 +1,46 @@
 body {
     overflow-x: hidden;
     margin: 0; 
+    padding: 0;
     height: 100vh; 
-    color: #ece0e0;
+    color: rgb(236, 224, 224);
     font-size: 2vh;
 
+    --ColorStart: rgb(20, 20, 20);         /* Start Color */
+    --ColorMiddle1: rgb(26, 26, 26);       /* Middle Color 1 */
+    --ColorMiddle2: rgb(30, 30, 30);       /* Middle Color 2 */
+    --ColorMiddle3: rgb(36, 36, 36);       /* Middle Color 3 */
+    --ColorMiddle4: rgb(41, 41, 41);       /* Middle Color 4 */
+    --ColorEnd: rgb(46, 46, 46);           /* End Color */
+
     background: linear-gradient(
-      -45deg,
-      hsl(0, 0%, 8%) 0%,
-      hsl(0, 0%, 10%) 20%,
-      hsl(0, 0%, 12%) 40%,
-      hsl(0, 0%, 14%) 60%,
-      hsl(0, 0%, 16%) 80%,
-      hsl(0, 0%, 18%) 100%
+        -45deg,
+        var(--ColorStart) 0%,
+        var(--ColorMiddle1) 20%,
+        var(--ColorMiddle2) 40%,
+        var(--ColorMiddle3) 60%,
+        var(--ColorMiddle4) 80%,
+        var(--ColorEnd) 100%
     );
-    background-size: 200% 200%; 
+    background-size: 200%; 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    animation: GradientAnimation 15s ease infinite;
-  }
-  
-  @keyframes GradientAnimation {
+
+    animation: GradientAnimation 15s ease-in-out infinite;
+}
+
+@keyframes GradientAnimation {
     0% {
-      background-position: 0% 0%;
+        background-position: 0% 0%;
     }
     50% {
-      background-position: 100% 100%;
+        background-position: 100% 100%;
     }
     100% {
-      background-position: 0% 0%;
+        background-position: 0% 0%;
     }
-  }   
+}
+
 hr{
     margin: 0;
     width: 110vw;
@@ -38,7 +48,7 @@ hr{
 }
 a:link,a:visited,a:hover,a:active{
     text-decoration: none; 
-    color: #ece0e0;
+    color: rgb(236, 224, 224);
 }
 .Container{
     display: grid;
@@ -87,7 +97,7 @@ a:link,a:visited,a:hover,a:active{
     transition: scale 0.3s;
 }
 .MiniContainer:hover{
-    scale: 1.009;
+    scale: 1.009;      
 }
 .MiniContainer:active{
     scale: 0.999;
@@ -100,6 +110,32 @@ a:link,a:visited,a:hover,a:active{
         height: 25vh;
         width: auto;
     }
+
+
+}
+.GameImage:hover{
+    body {
+        overflow-x: hidden;
+        margin: 0; 
+        padding: 0;
+        height: 100vh; 
+        color: hsl(40, 70%, 85%); /* Font color that pairs well with the purple hues */
+        font-size: 2vh;
+    
+        background: linear-gradient(
+          135deg,
+          hsl(270, 40%, 16%) 0%,  /* Dark purple */
+          hsl(275, 35%, 13%) 20%, /* Slightly darker purple */
+          hsl(280, 30%, 11%) 40%, /* Darker and more muted purple */
+          hsl(285, 28%, 9%) 60%,  /* Even darker purple */
+          hsl(290, 25%, 8%) 80%,  /* Very dark purple */
+          hsl(295, 20%, 7%) 100%  /* Almost black with a purple tint */
+        );
+        background-size: 200% 200%; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        animation: GradientAnimation 15s ease infinite;
+    }   
 }
 #Heading{
     grid-area: H1;
