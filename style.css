@@ -1,8 +1,7 @@
 body {
     overflow-x: hidden;
     margin: 0; 
-    padding: 0;
-    height: 100vh; 
+    padding: 0; 
     color: rgb(236, 224, 224);
     font-size: 2vh;
 
@@ -40,52 +39,36 @@ body {
         background-position: 0% 0%;
     }
 }
-
-hr{
-    margin: 0;
-    width: 110vw;
-    margin-left: -1vw;
-}
 a:link,a:visited,a:hover,a:active{
     text-decoration: none; 
     color: rgb(236, 224, 224);
 }
-.Container{
+
+/* Not Currently In Use*/
+.Container {
     display: grid;
     margin: 0;
-    padding:0;
-
-    /* H1 is the header G1 is the first game I1 is the image for the first game A1 is the first of any ads and F1 is the footer */
-
+    padding: 0;
+    width: 100%;
     grid-template-areas: 
-    "H1 H1 H1 H1 H1 H1"
-
-    "L1 L1 L1 L1 L1 L1"
-
-    "I1 I1 G1 G1 G1 G1"
-    "I1 I1 G1 G1 G1 G1"
-
-    "L2 L2 L2 L2 L2 L2"
-
-    "A1 A1 A1 A1 A1 A1"
-    "A1 A1 A1 A1 A1 A1"
-
-    "L3 L3 L3 L3 L3 L3"
-
-    "G2 G2 G2 G2 G2 G2"   
-    "G2 G2 G2 G2 G2 G2"
-    
-    "L4 L4 L4 L4 L4 L4"
-
-    "F1 F1 F1 F1 F1 F1"
-    ;
-
-    height: 100vh;
+        "H1 H1 H1 H1 H1 H1"
+        "L1 L1 L1 L1 L1 L1"
+        "I1 I1 G1 G1 G1 G1"
+        "I1 I1 G1 G1 G1 G1"
+        "L2 L2 L2 L2 L2 L2"
+        "A1 A1 A1 A1 A1 A1"
+        "A1 A1 A1 A1 A1 A1"
+        "L3 L3 L3 L3 L3 L3"
+        "G2 G2 G2 G2 G2 G2"   
+        "G2 G2 G2 G2 G2 G2"
+        "L4 L4 L4 L4 L4 L4";
+}
+hr {
+    margin: 0;
+    width: 100%;
+    margin-left: 0;
 }
 .MiniContainer{
-    height: 15vh;
-    width: 98vw;
-
     justify-self: left;
     text-align: left;
 
@@ -105,37 +88,15 @@ a:link,a:visited,a:hover,a:active{
 .GameImage{
     transition: scale 0.3s;
     align-self:center;
-    img{
-        border: 0.2rem double #ece0e0 ;
-        height: 25vh;
-        width: auto;
-    }
 
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 
 }
-.GameImage:hover{
-    body {
-        overflow-x: hidden;
-        margin: 0; 
-        padding: 0;
-        height: 100vh; 
-        color: hsl(40, 70%, 85%); /* Font color that pairs well with the purple hues */
-        font-size: 2vh;
-    
-        background: linear-gradient(
-          135deg,
-          hsl(270, 40%, 16%) 0%,  /* Dark purple */
-          hsl(275, 35%, 13%) 20%, /* Slightly darker purple */
-          hsl(280, 30%, 11%) 40%, /* Darker and more muted purple */
-          hsl(285, 28%, 9%) 60%,  /* Even darker purple */
-          hsl(290, 25%, 8%) 80%,  /* Very dark purple */
-          hsl(295, 20%, 7%) 100%  /* Almost black with a purple tint */
-        );
-        background-size: 200% 200%; 
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        animation: GradientAnimation 15s ease infinite;
-    }   
+.GameImage img {
+    border: 0.2rem double #ece0e0;
+    height: 25vh;
+    width: auto;
 }
 #Heading{
     grid-area: H1;
@@ -155,23 +116,20 @@ a:link,a:visited,a:hover,a:active{
     grid-area: I1;
     justify-self: center;
 }
-#IM1:hover{
+#IM1:hover, #IM2:hover{
     scale: 1.07;
 }
-#IM1:active{
+#IM1:active, #IM2:active{
     scale: 0.95;
 }
 #MC1{
     grid-area: G1;
-
-    text-align: left;
 }
 #GameLine1{
     grid-area: L2;
 }
 #AD1{
     grid-area: A1;
-    border-bottom: 0;
 }
 #GameLine2{
     grid-area: L3;
