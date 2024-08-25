@@ -68,6 +68,9 @@ hr {
     width: 100%;
     margin-left: 0;
 }
+.LargeContainer{
+    display: flex;
+}
 .MiniContainer{
     justify-self: left;
     text-align: left;

@@ -78,7 +78,7 @@ function animateFontColor(targetFontColors, duration = 1000) {
 }
 
 // RGB equivalent colors for hover
-document.querySelectorAll('.MiniContainer').forEach(function(image) {
+document.querySelectorAll('.GameImage').forEach(function(image) {
     image.addEventListener('mouseover', function() {
         animateBackground([
             'rgb(5, 5, 5)',
