@@ -43,32 +43,12 @@ a:link,a:visited,a:hover,a:active{
     text-decoration: none; 
     color: rgb(236, 224, 224);
 }
-
-/* Not Currently In Use*/
-.Container {
-    display: grid;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    grid-template-areas: 
-        "H1 H1 H1 H1 H1 H1"
-        "L1 L1 L1 L1 L1 L1"
-        "I1 I1 G1 G1 G1 G1"
-        "I1 I1 G1 G1 G1 G1"
-        "L2 L2 L2 L2 L2 L2"
-        "A1 A1 A1 A1 A1 A1"
-        "A1 A1 A1 A1 A1 A1"
-        "L3 L3 L3 L3 L3 L3"
-        "G2 G2 G2 G2 G2 G2"   
-        "G2 G2 G2 G2 G2 G2"
-        "L4 L4 L4 L4 L4 L4";
-}
 hr {
     margin: 0;
     width: 100%;
     margin-left: 0;
 }
-.LargeContainer{
+.GameImageAndDescriptionContainer{
     display: flex;
 }
 .MiniContainer{
@@ -102,18 +82,15 @@ hr {
     width: auto;
 }
 #Heading{
-    grid-area: H1;
+    display: flex;
 
     margin-left: 2vw;
     margin-right: 2vw;
 
-    word-spacing: 39vw;
+    word-spacing: 36.8vw;
 }
 #HomeButton{
     text-align: left;
-}
-#HeaderLine{
-    grid-area: L1;
 }
 #IM1{
     grid-area: I1;
@@ -124,22 +101,4 @@ hr {
 }
 #IM1:active, #IM2:active{
     scale: 0.95;
-}
-#MC1{
-    grid-area: G1;
-}
-#GameLine1{
-    grid-area: L2;
-}
-#AD1{
-    grid-area: A1;
-}
-#GameLine2{
-    grid-area: L3;
-}
-#MC2{
-    grid-area: G2;
-}
-#GameLine3{
-    grid-area: L4;
 }
