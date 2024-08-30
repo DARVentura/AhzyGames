@@ -1,0 +1,58 @@
+body {
+    overflow-x: hidden;
+    margin: 0; 
+    height: 100vh; 
+    color: #ece0e0;
+    font-size: 2vh;
+
+    background: linear-gradient(
+      120deg,
+      hsl(0, 0%, 8%) 0%,
+      hsl(0, 0%, 10%) 20%,
+      hsl(0, 0%, 12%) 40%,
+      hsl(0, 0%, 14%) 60%,
+      hsl(0, 0%, 16%) 80%,
+      hsl(0, 0%, 18%) 100%
+    );
+    background-size: 200% 200%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: GradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes GradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  } 
+a:link,a:visited,a:hover,a:active{
+    text-decoration: none; 
+    color: #ece0e0;
+}
+#Heading{
+    display: flex;
+    justify-content: left;
+
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+    word-spacing: 5vw;
+}
+#FarmGameDisplay{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    height: 75vh;
+    width: 65vw;
+
+    border: solid rgb(33, 33, 33);
+
+    padding: 0;
+}
