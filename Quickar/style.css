@@ -60,5 +60,19 @@ iframe{
 
     border: solid rgb(33, 33, 33);
 
-    padding: 0;
+    margin-top: 5vh;
+}
+#GameTitle{
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+}
+#GameDescription{
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+
+  padding-bottom: 3vh;
 }
