@@ -67,12 +67,15 @@ display: flex;
 
 justify-content: center;
 align-content: center;
+text-align: center;
+
 }
 #GameDescription{
 display: flex;
 
 justify-content: center;
 align-content: center;
+text-align: center;
 
 padding-bottom: 3vh;
 }
