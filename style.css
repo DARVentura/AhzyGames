@@ -79,6 +79,8 @@ hr {
     transition: scale 0.3s;
     align-self:center;
 
+    margin-left: 1vw;
+
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
