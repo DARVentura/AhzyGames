@@ -95,6 +95,18 @@ hr {
     justify-content: center;
 
     gap: 15vw;
+
+    background-color: rgb(31, 31, 31);
+}
+#Footer{
+    display: flex;
+
+    padding-top: 1vh;
+    padding-left: 1vw;
+
+    justify-content: left;
+
+    background-color: rgb(31, 31, 31);
 }
 #HomeButton{
     text-align: left;
