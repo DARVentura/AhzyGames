@@ -96,7 +96,7 @@ hr {
 
     gap: 15vw;
 
-    background-color: rgb(31, 31, 31);
+    background-color: rgba(31, 31, 31, 0.75);
 }
 #Footer{
     display: flex;
@@ -106,7 +106,7 @@ hr {
 
     justify-content: left;
 
-    background-color: rgb(31, 31, 31);
+    background-color: rgba(31, 31, 31, 0.75);
 }
 #HomeButton{
     text-align: left;
