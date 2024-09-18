@@ -93,8 +93,11 @@ hr {
     display: flex;
 
     justify-content: center;
+    align-content: center;
 
     gap: 15vw;
+
+    padding-right: 1vw;
 
     background-color: rgba(31, 31, 31, 0.75);
 }
